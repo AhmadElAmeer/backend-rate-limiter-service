@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ratelimiter-service"
+version = "0.1.0"
+description = "Fixed window, sliding log, sliding counter and token bucket rate limiters behind a Flask API"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Ahmad Kaiss"}]
+dependencies = ["flask>=3.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["ratelimiter"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
