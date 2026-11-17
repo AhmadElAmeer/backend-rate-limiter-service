@@ -1,5 +1,7 @@
 # backend-rate-limiter-service
 
+[![CI](https://github.com/AhmadElAmeer/backend-rate-limiter-service/actions/workflows/ci.yml/badge.svg)](https://github.com/AhmadElAmeer/backend-rate-limiter-service/actions/workflows/ci.yml)
+
 Four rate-limiting algorithms (fixed window, sliding window log, sliding window counter, token bucket) behind one interface, a Flask API that enforces them with standard `429` / `Retry-After` responses, and a simulator that replays the same traffic against all four to measure how strictly each one actually holds the limit.
 
 ## Problem
